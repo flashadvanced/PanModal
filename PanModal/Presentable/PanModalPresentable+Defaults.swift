@@ -92,6 +92,10 @@ public extension PanModalPresentable where Self: UIViewController {
     var shouldRoundTopCorners: Bool {
         return isPanModalPresented
     }
+ 
+    var shouldModalPresentationCaptureStatusBarAppearance: Bool {
+        return true
+    }
 
     var showDragIndicator: Bool {
         return shouldRoundTopCorners
