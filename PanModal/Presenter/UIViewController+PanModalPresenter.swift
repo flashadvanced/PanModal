@@ -55,7 +55,7 @@ extension UIViewController: PanModalPresenter {
             viewControllerToPresent.popoverPresentationController?.delegate = PanModalPresentationDelegate.default
         } else {
             viewControllerToPresent.modalPresentationStyle = .custom
-            viewControllerToPresent.modalPresentationCapturesStatusBarAppearance = true
+            viewControllerToPresent.modalPresentationCapturesStatusBarAppearance = viewControllerToPresent.shouldModalPresentationCaptureStatusBarAppearance
             viewControllerToPresent.transitioningDelegate = PanModalPresentationDelegate.default
         }
 
