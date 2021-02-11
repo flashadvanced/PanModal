@@ -172,6 +172,12 @@ public protocol PanModalPresentable: AnyObject {
      Default value is true.
      */
     var showDragIndicator: Bool { get }
+ 
+    /**
+     A flag to determine if the status bar should change its appearance when transitioning.
+     Default value is true.
+     */
+    var shouldModalPresentationCaptureStatusBarAppearance: Bool { get }
 
     /**
      Asks the delegate if the pan modal should respond to the pan modal gesture recognizer.
